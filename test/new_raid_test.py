@@ -2,6 +2,7 @@ import unittest
 #from nose.tools import istest
 import os, re, ConfigParser, pytest
 from generate_raid import new_raid
+import tempfile
 
 @pytest.fixture()
 def testconfig():
@@ -17,19 +18,7 @@ path={working_directory}
     if not os.path.isfile(os.path.join(os.getcwd(), "config")):
         raise ValueError('nope')
 
-@pytest.fixture()
-def cleanup():
-    delete_file = os.path.join('/tmp', 'raid1234.txt')
-    os.remove(delete_file)
-
-
-@pytest.fixture()
-def add_file():
-    with open('/tmp/die_please', 'w') as f:
-        f.write('die\nplease')
-        f.close()
-
-@pytest.mark.usefixtures("cleandir")
+@pytest.mark.usefixtures("cleandir", 'testconfig')
 class NewRaidTest(unittest.TestCase):
 
     def test_cwd_starts_empty(self):
