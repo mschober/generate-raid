@@ -9,3 +9,5 @@ parts
 lib
 lib64
 .tox
+test/__pycache__/*
+*.pyc

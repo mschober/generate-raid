@@ -12,7 +12,7 @@ setup(
     dependency_links=[
         "file:///Users/mschober/dev/lng/python/exp/Common#egg=common-0.1"
     ],
-    setup_requires=['nose>=1.0', 'pytest'],
+    setup_requires=['nose>=1.0', 'pytest', 'common==0.1'],
     install_requires=['nose', 'pytest', 'common==0.1'],
     test_suite="nose.collector",
     tests_require=["nose"],

@@ -1,7 +1,7 @@
 import unittest
-from generate_raid import new_raid
 from nose.tools import istest
 import os, re, ConfigParser, pytest
+from generate_raid import new_raid
 
 #@pytest.fixture()
 #def testconfig():

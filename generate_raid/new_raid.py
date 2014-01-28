@@ -1,6 +1,7 @@
 import os, ConfigParser
-from common import utilities
 from datetime import date
+import common
+from common import *
 
 class GenerateRaid(object):
 
