@@ -1,5 +1,5 @@
 import unittest
-from src.generate_raid import GenerateRaid
+from generate_raid import new_raid
 from nose.tools import istest
 import os, re, ConfigParser, pytest
 

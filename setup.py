@@ -10,10 +10,10 @@ setup(
     include_package_data=True,
     zip_safe=False,
     dependency_links=[
-        "file://localhost/Users/mschober/dev/lng/python/exp/common#egg=common-1.0"
+        "file:///Users/mschober/dev/lng/python/exp/Common#egg=common-0.1"
     ],
-    setup_requires=['nose>=1.0', 'pytest', 'common==0.1'],
-    install_requires=['nose', 'pytest'],
+    setup_requires=['nose>=1.0', 'pytest'],
+    install_requires=['nose', 'pytest', 'common==0.1'],
     test_suite="nose.collector",
     tests_require=["nose"],
     entry_points={
