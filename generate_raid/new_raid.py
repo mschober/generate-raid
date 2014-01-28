@@ -3,7 +3,7 @@ from datetime import date
 import common
 from common import *
 
-class GenerateRaid(object):
+class NewRaid(object):
 
     def __init__(self, sections, ticket_number, raid_config_path='~/.raidconfig'):
         self.user = utilities.get_user()
@@ -27,10 +27,10 @@ class GenerateRaid(object):
         self.__set_path(raid_config_path)
         self.raid = os.path.join(self.path, "raid{ticket_number}.txt".format(ticket_number=self.ticket_number))
 
-    def write_raid(self):
+    def save(self):
         with open(self.raid, 'w') as raid:
             raid.writelines(['hi\n', 'there\n'])
             raid.close()
 
-def GenerateRaidMain():
+def NewRaidMain():
     print 'yup'

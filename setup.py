@@ -18,7 +18,7 @@ setup(
     tests_require=["nose"],
     entry_points={
     'console_scripts': [
-        'new_raid = generate_raid.new_raid:GenerateRaidMain',
+        'new_raid = generate_raid.new_raid:NewRaidMain',
         ],
     }
 )
