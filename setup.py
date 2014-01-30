@@ -9,7 +9,7 @@ setup(
     include_package_data=True,
     zip_safe=False,
     dependency_links=[
-        "file:///Users/mschober/dev/lng/python/exp/Common#egg=common"
+        "git+https://github.com/mschober/exp-pcommon.git#egg=common"
     ],
     setup_requires=['nose>=1.0', 'pytest', 'common'],
     install_requires=['nose', 'pytest', 'common'],
