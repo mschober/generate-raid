@@ -21,13 +21,13 @@ path={working_directory}
 @pytest.mark.usefixtures("cleandir", 'testconfig')
 class NewRaidTest(unittest.TestCase):
 
-    def test_cwd_starts_empty(self):
-        assert os.listdir(os.getcwd()) == []
-        with open("myfile", "w") as f:
-            f.write("hello")
+    #def test_cwd_starts_empty(self):
+    #    assert os.listdir(os.getcwd()) == []
+    #    with open("myfile", "w") as f:
+    #        f.write("hello")
 
-    def test_cwd_again_starts_empty(self):
-        assert os.listdir(os.getcwd()) == []
+    #def test_cwd_again_starts_empty(self):
+    #    assert os.listdir(os.getcwd()) == []
 
     header_template = '''#****************************************************************************
 #Copyright (C) {year} Expedia, Inc. All rights reserved.
