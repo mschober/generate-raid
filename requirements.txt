@@ -1,5 +1,5 @@
 Fabric==1.8.1
-GenerateRaid==0.1
+-e git+git@github.com:mschober/generate-raid.git@5d78f771fb3f36ce11063bd6cc36ab1900a8e375#egg=GenerateRaid-dev
 common==0.1
 coverage==3.7.1
 ecdsa==0.10
