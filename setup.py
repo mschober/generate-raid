@@ -9,7 +9,7 @@ setup(
     include_package_data=True,
     zip_safe=False,
     dependency_links=[
-        "https://github.com/mschober/exp-pcommon/zipball/master#egg=common"
+        "https://github.com/mschober/exp-pcommon/archive/master.zip#egg=common"
     ],
     setup_requires=['nose>=1.0', 'pytest', 'common'],
     install_requires=['nose', 'pytest', 'common'],
